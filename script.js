@@ -6,72 +6,89 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você ganhou uma bola de futebol e decidiu começar a praticar. O que você faria primeiro?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Começaria a treinar dribles e dominar a bola.",
+                afirmacao: "Você começou a praticar bastante os dribles e melhorou seu controle de bola."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Chamaria seus amigos para jogar uma partida.",
+                afirmacao: "Você percebeu que jogar futebol com seus amigos é uma ótima maneira de se divertir."
             }
         ]
     },
-    {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
-        alternativas: [
-            {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
-            },
-            {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
-            }
-        ]
-    },
-    {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
-        alternativas: [
-            {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
-            },
-            {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
-            }
-        ]
-    },
-    {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
-        alternativas: [
-            {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
-            },
-            {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
-            }
-        ]
-    },
-    {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
-        alternativas: [
-            {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
-            },
-            {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
-            }
-        ]
-    },
-];
 
+    {
+        enunciado: "Depois de alguns dias treinando futebol, você percebe que precisa melhorar uma habilidade. Qual escolheria?",
+        alternativas: [
+            {
+                texto: "Treinaria chutes e finalizações.",
+                afirmacao: "Você treinou bastante suas finalizações e começou a marcar muitos gols."
+            },
+            {
+                texto: "Treinaria passes e jogadas em equipe.",
+                afirmacao: "Você aprendeu que bons passes e trabalho em equipe são muito importantes no futebol."
+            }
+        ]
+    },
+
+    {
+        enunciado: "Você foi convidado para participar de um campeonato com seus amigos. Qual posição escolheria?",
+        alternativas: [
+            {
+                texto: "Atacante, para tentar marcar gols.",
+                afirmacao: "Você escolheu ser atacante e começou a procurar oportunidades para marcar gols."
+            },
+            {
+                texto: "Goleiro, para defender o time.",
+                afirmacao: "Você descobriu que gosta de defender o gol e fazer grandes defesas."
+            }
+        ]
+    },
+
+    {
+        enunciado: "Durante uma partida importante, seu time está perdendo por 1 a 0. O que você faria?",
+        alternativas: [
+            {
+                texto: "Manteria a calma e ajudaria o time a buscar o empate.",
+                afirmacao: "Você mostrou que sabe manter a calma e ajudar seus companheiros nos momentos difíceis."
+            },
+            {
+                texto: "Tentaria uma jogada individual para mudar o resultado.",
+                afirmacao: "Você teve coragem para assumir a responsabilidade e tentar uma jogada decisiva."
+            }
+        ]
+    },
+
+    {
+        enunciado: "Seu time conseguiu empatar a partida. Faltam poucos minutos para o jogo terminar. O que você faria?",
+        alternativas: [
+            {
+                texto: "Continuaria trabalhando em equipe para tentar marcar.",
+                afirmacao: "Você percebeu que trabalhar em equipe pode criar boas oportunidades durante uma partida."
+            },
+            {
+                texto: "Tentaria uma jogada rápida para surpreender o adversário.",
+                afirmacao: "Você gosta de aproveitar oportunidades e surpreender os adversários durante o jogo."
+            }
+        ]
+    },
+
+    {
+        enunciado: "Depois de vários treinos, você percebe que está evoluindo bastante no futebol. Qual seria seu próximo objetivo?",
+        alternativas: [
+            {
+                texto: "Participar de campeonatos e tentar ganhar títulos.",
+                afirmacao: "Você começou a participar de campeonatos e descobriu a emoção de competir e buscar títulos."
+            },
+            {
+                texto: "Continuar jogando por diversão com meus amigos.",
+                afirmacao: "Você percebeu que o mais importante é continuar se divertindo e compartilhando bons momentos com seus amigos."
+            }
+        ]
+    }
+];
 
 let atual = 0;
 let perguntaAtual;
@@ -82,31 +99,49 @@ function mostraPergunta() {
         mostraResultado();
         return;
     }
+
     perguntaAtual = perguntas[atual];
+
     caixaPerguntas.textContent = perguntaAtual.enunciado;
+
     caixaAlternativas.textContent = "";
+
     mostraAlternativas();
 }
 
-function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas) {
+function mostraAlternativas() {
+
+    for (const alternativa of perguntaAtual.alternativas) {
+
         const botaoAlternativas = document.createElement("button");
+
         botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
+
+        botaoAlternativas.addEventListener("click", () => {
+            respostaSelecionada(alternativa);
+        });
+
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
 
 function respostaSelecionada(opcaoSelecionada) {
+
     const afirmacoes = opcaoSelecionada.afirmacao;
+
     historiaFinal += afirmacoes + " ";
+
     atual++;
+
     mostraPergunta();
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+
+    caixaPerguntas.textContent = "🏆 Seu caminho no futebol...";
+
     textoResultado.textContent = historiaFinal;
+
     caixaAlternativas.textContent = "";
 }
 
